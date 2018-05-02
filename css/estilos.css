@@ -4,17 +4,21 @@
 }
 body
 {
-  background-color: #5b7989;
+  background-color: #02010a;
   font-family: 'Dancing Script';
-}
-
-h1
-{
-  color: white;
-  font-weight: bold;
   text-shadow: 2px 2px #02010a;
 }
-#nav
-{
 
+#cabecera
+{
+    background-color: #5b7989;
+    border-radius: 10px;
+    -moz-border-radius=10px;
+    -webkit-border-radius=10px;
+    padding: 30px;
+    margin: 10px;
+}
+#menu-principal
+{
+  float: right;
 }
