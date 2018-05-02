@@ -5,16 +5,16 @@
 body
 {
   background-color: #5b7989;
+  font-family: 'Dancing Script';
 }
 
 h1
 {
   color: white;
   font-weight: bold;
-  text-shadow: 0 0 2px #02010a;
+  text-shadow: 2px 2px #02010a;
 }
-
-.estiloLetra
+#nav
 {
-  font-family: 'Dancing Script';                
+
 }
