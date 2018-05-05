@@ -2,23 +2,40 @@
   font-family: 'Dancing Script';
   src: url('Dancing Script.ttf');
 }
+
 body
 {
   background-color: #02010a;
-  font-family: 'Dancing Script';
-  text-shadow: 2px 2px #02010a;
+
+  color: white;
+  display: inline;
 }
 
+header
+{
+
+}
 #cabecera
 {
     background-color: #5b7989;
-    border-radius: 10px;
-    -moz-border-radius=10px;
-    -webkit-border-radius=10px;
-    padding: 30px;
-    margin: 10px;
+    width: 80%;
+
 }
-#menu-principal
+#menu-principal{
+     float: right;
+     display: inline;
+}
+
+.contenido
 {
-  float: right;
+  font-family: 'Dancing Script';
+  text-shadow: 2px 2px #02010a;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: #5b7989;
+  border-radius: 10px;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  padding: 35px;
+
 }
