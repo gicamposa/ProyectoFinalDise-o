@@ -23,7 +23,6 @@ header
   width: 100%;
   display: inline;
   overflow: hidden;
-  margin-bottom: 20px;
 }
 
 #menu-principal
@@ -37,6 +36,10 @@ header
   color: white;
 
 }
+a:link
+{
+  text-decoration: none;
+}
 .contenido
 {
   margin-left: 10%;
@@ -45,6 +48,6 @@ header
   border-radius: 15px;
   -moz-border-radius:15px;
   -webkit-border-radius:15px;
-   padding: 35px;
-   font-size: 30px;
+   padding: 25px;
+   font-size: 25px;
 }
