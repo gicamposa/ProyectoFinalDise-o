@@ -23,6 +23,8 @@ header
   width: 100%;
   display: inline;
   overflow: hidden;
+  line-height: 100px;
+  padding: 25px;
 }
 
 #menu-principal
@@ -34,20 +36,60 @@ header
 {
   padding-right: 25px;
   color: white;
-
 }
+
 a:link
 {
   text-decoration: none;
 }
 .contenido
 {
-  margin-left: 10%;
-  margin-right: 10%;
   background-color: #5b7989;
   border-radius: 15px;
   -moz-border-radius:15px;
   -webkit-border-radius:15px;
-   padding: 25px;
-   font-size: 25px;
+  font-size: 35px;
+}
+.wrapper
+{
+ width: 100%;
+ max-width: 900px;
+ margin: auto;
+ overflow: hidden;
+}
+
+@media (max-width:900px) {
+  contenido
+  {
+    background-color: #5b7989;
+    border-radius: 15px;
+    -moz-border-radius:15px;
+    -webkit-border-radius:15px;
+    font-size: 35px;
+  }
+  .wrapper
+  {
+   width: 100%;
+   max-width: 900px;
+   margin: auto;
+   overflow: hidden;
+  }
+}
+
+@media (min-width:900px) {
+  contenido
+  {
+    background-color: #5b7989;
+    border-radius: 15px;
+    -moz-border-radius:15px;
+    -webkit-border-radius:15px;
+    font-size: 35px;
+  }
+  .wrapper
+  {
+   width: 100%;
+   max-width: 900px;
+   margin: auto;
+   overflow: hidden;
+  }
 }
