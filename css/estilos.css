@@ -48,7 +48,7 @@ a:link
   border-radius: 15px;
   -moz-border-radius:15px;
   -webkit-border-radius:15px;
-  font-size: 35px;
+  font-size: 30px;
 }
 .wrapper
 {
@@ -58,18 +58,17 @@ a:link
  overflow: hidden;
 }
 
-@media (max-width:900px) {
+@media (max-width: 900px) {
   contenido
   {
     background-color: #5b7989;
     border-radius: 15px;
     -moz-border-radius:15px;
     -webkit-border-radius:15px;
-    font-size: 35px;
+    font-size: 30px;
   }
   .wrapper
   {
-   width: 100%;
    max-width: 900px;
    margin: auto;
    overflow: hidden;
@@ -83,7 +82,7 @@ a:link
     border-radius: 15px;
     -moz-border-radius:15px;
     -webkit-border-radius:15px;
-    font-size: 35px;
+    font-size: 30px;
   }
   .wrapper
   {
@@ -92,4 +91,8 @@ a:link
    margin: auto;
    overflow: hidden;
   }
+}
+.bloque1
+{
+  
 }
