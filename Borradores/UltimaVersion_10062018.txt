@@ -1,0 +1,121 @@
+css
+
+*
+{
+	margin:0px;
+  padding: 0px;
+}
+
+
+@font-face {
+  font-family: 'Dancing Script';
+  src: url('Dancing Script.ttf');
+}
+
+body
+{
+  background-color:  #02010a;
+  font-family: 'Dancing Script';
+  font-size: 27px;
+  display: inline;
+}
+
+.contenido
+{
+	max-width: 900px;
+  text-align: center;
+}
+
+header
+{
+
+  height: 100%;
+  text-align: center;
+	padding-top: 35px;
+	padding-bottom: 35px;
+  background-color: #5b7989;
+	color:white;
+  border-radius: 10px;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+}
+
+header nav
+{
+  float: right;
+  height: 100%;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+
+header nav a
+{
+  text-decoration: none;
+  color: white;
+}
+
+.titulo
+{
+  height: 100%;
+  margin-right: 5%;
+  margin-left: 5%;
+  }
+
+
+@media screen and (max-width: 900px){
+
+	.contenido
+	{
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+
+@media screen and  (min-width: 900px){
+
+	.contenido
+	{
+		width: 100%;
+		margin: 0 auto;
+
+	}
+}
+
+html
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Examen final del curso de CSS y Diseño Web Responsive.">
+    <meta name="author" content="Giovanni Campos Alvarado">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="viewport" content="width=device-width,user=scalable=no">
+    <link rel="stylesheet" href="css/estilos.css" type="text/css" rel="stylesheet">
+     <link href="css/estilos.css" type="text/css" rel="stylesheet">
+    <title>Comenzando con la fotografía</title>
+  </head>
+  <body>
+     <header>
+          <div class="">
+              Comenzando con la fotografía
+          </div>          
+          <nav>
+              <a href="index.HTML" target="_blank">Inicio</a>
+              <a href="educacion.html" target="_blank">Paisajes</a>
+              <a href="experiencia.html" target="_blank">Retratos</a>
+          </nav>
+     </header>
+
+     <div id="contenido">
+       <section>
+         <article id="columna1">Columna 1</article>
+         <article id="columna2">Columna 2</article>
+         <article id="columna3">Columna 3</article>
+       </section>
+
+       <footer></footer>
+     </div>
+
+   </body>
+</html>

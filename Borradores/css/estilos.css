@@ -1,0 +1,231 @@
+*
+{
+ margin: 0;
+ padding: 0;
+}
+@font-face {
+  font-family: 'Dancing Script';
+  src: url('Dancing Script.ttf');
+}
+
+body
+{
+  background-color: #02010a;
+  color: white;
+  font-family: 'Dancing Script';
+  text-shadow: 2px 2px #02010a;
+  display: inline;
+}
+
+header
+{
+  background-color: #5b7989;
+  width: 100%;
+  display: inline;
+  overflow: hidden;
+  line-height: 100px;
+  padding: 25px;
+}
+
+#menu-principal
+{
+  float:right;
+}
+
+#menu-principal a
+{
+  padding-right: 25px;
+  color: white;
+}
+
+a:link
+{
+  text-decoration: none;
+}
+.contenido
+{
+  background-color: #5b7989;
+  border-radius: 15px;
+  -moz-border-radius:15px;
+  -webkit-border-radius:15px;
+  font-size: 30px;
+}
+.wrapper
+{
+ width: 100%;
+ max-width: 900px;
+ margin: auto;
+ overflow: hidden;
+}
+
+#contendorCentrada
+{
+  background-color: #82c3a6;
+  text-align: center;
+}
+
+#imagen{
+  margin: auto;
+  padding: 10px;
+  width: 100%;
+}
+
+.contenedorFlex
+{
+  display: flex;
+  flex-direction: row;
+  background-color: #d5c75f;
+  border: 1px;
+
+}
+
+#paisaje
+{
+  text-align: center;
+  width: 50%;
+}
+
+#paisaje img:hover
+{
+    transition: background 1s;
+    animation: rotar 3s;
+}
+
+@-webkit-keyframes rotar
+{
+  from
+  {
+    transform: rotate(10deg);
+  }
+  to
+  {
+    height: 0;
+  }
+}
+
+#paisaje img
+{
+  border: 2px;
+  -webkit-filter: drop-shadow(15px 20px 25px #82c3a6);
+  filter: drop-shadow(15px 20px 25px #82c3a6);
+}
+
+#retrato
+{
+  text-align: center;
+  width: 50%;
+}
+
+#retrato img:hover
+{
+  transition: background 1s;
+  animation: rotarRetrato 3s;
+}
+
+@-webkit-keyframes rotarRetrato
+{
+  from
+  {
+      transform: translate(20px,-5px);
+  }
+  to
+  {
+    height: 0;
+  }
+}
+
+#retrato img
+{
+  border: 2px;
+  -webkit-filter: drop-shadow(15px 20px 25px #82c3a6);
+  filter: drop-shadow(15px 20px 25px #82c3a6);
+}
+
+@media (max-width: 900px) {
+  .contenido
+  {
+    background-color: #5b7989;
+    border-radius: 15px;
+    -moz-border-radius:15px;
+    -webkit-border-radius:15px;
+    font-size: 30px;
+  }
+  .wrapper
+  {
+   width: 100%;
+   max-width: 900px;
+   margin: auto;
+   overflow: hidden;
+  }
+  #imagen{
+      margin-left: auto;
+      margin-right: auto;
+  }
+}
+
+@media (min-width:900px) {
+  .contenido
+  {
+    background-color: #5b7989;
+    border-radius: 15px;
+    -moz-border-radius:15px;
+    -webkit-border-radius:15px;
+    font-size: 30px;
+  }
+  .wrapper
+  {
+   width: 100%;
+   max-width: 900px;
+   margin: auto;
+   overflow: hidden;
+  }
+  #imagen{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.contenedorFooter
+{
+  display: flex;
+  flex-direction: row;
+  background-color: #C6d5c5;
+  border-radius: 10px;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+}
+
+#contacto
+{
+  display: inline;
+  width: 25%;
+  font-size: 21px;
+}
+
+h1
+{
+  color: black;
+  font-size: 22px;
+}
+
+#termino
+{
+  display: inline;
+  width: 25%;
+  font-size: 21px;
+  color: darkblue;
+}
+
+#redSocial
+{
+  display: inline;
+  width: 25%;
+  font-size: 21px;
+}
+#derechos
+{
+  display: inline;
+  width: 25%;
+  font-size: 21px;
+  color: black;
+}
