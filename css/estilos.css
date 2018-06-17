@@ -14,9 +14,8 @@ body
 {
   background-color:  #02010a;
   font-family: 'Dancing Script';
-  font-size: 27px;
+  font-size: 29px;
   display: inline;
-
 }
 
 div#centrado
@@ -39,13 +38,14 @@ header
   height: 100%;
   background-color: #5b7989;
 	text-align: center;
+	text-shadow: 2px 2px #02010a;
 	color:white;
-	padding-bottom: 100px;
-	padding-top: 45px;
+	font-weight: bold;
+	padding-bottom: 130px;
+	padding-top: 40px;
   border-radius: 15px;
   -moz-border-radius:15px;
   -webkit-border-radius:15px;
-
 }
 
 header nav
@@ -54,6 +54,7 @@ header nav
   height: 100%;
 	display: block;
 	margin-right: 20px;
+	font-size: 21px;
 }
 
 header nav a
@@ -81,7 +82,6 @@ figure
 	margin-right: 20px;
 }
 
-
 .contenedorFlex
 {
   display: flex;
@@ -97,6 +97,7 @@ figure
   text-align: center;
   width: 50%;
 }
+
 
 #paisaje img:hover
 {
@@ -132,7 +133,7 @@ figure
 #retrato img:hover
 {
   transition: background 1s;
-  animation: rotarRetrato 3s;
+  animation: rotarRetrato 2s;
 }
 
 @-webkit-keyframes rotarRetrato
@@ -154,7 +155,6 @@ figure
   filter: drop-shadow(15px 20px 25px #82c3a6);
 }
 
-
 .contenedorFooter
 {
   display: flex;
@@ -163,6 +163,8 @@ figure
   border-radius: 10px;
   -moz-border-radius:10px;
   -webkit-border-radius:10px;
+	margin-top: -6px;
+
 }
 
 #contacto
@@ -170,12 +172,13 @@ figure
   display: inline;
   width: 25%;
   font-size: 21px;
+	margin-left: 20px;
 }
 
-h1
+div h1
 {
   color: black;
-  font-size: 22px;
+  font-size: 25px;
 }
 
 #termino
@@ -183,7 +186,7 @@ h1
   display: inline;
   width: 25%;
   font-size: 21px;
-  color: darkblue;
+	margin-left: 20px;
 }
 
 #redSocial
@@ -191,43 +194,118 @@ h1
   display: inline;
   width: 25%;
   font-size: 21px;
+	margin-left: 20px;
 }
+
 #derechos
 {
   display: inline;
   width: 25%;
   font-size: 21px;
   color: black;
-}
-
-@media screen and (max-width: 900px){
-
-	.contenido
-	{
-		width: 90%;
-		margin: 0 auto;
-	}
-
-	.imagen{
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%
-	}
-
+	margin-left: 20px;
 }
 
 
-@media screen and  (min-width: 900px){
+@media (max-width: 900px){
 
 	.contenido
 	{
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		max-width: 100%;
+	}
+
+	header
+	{
+		width: 100%
+	  background-color: #5b7989;
+		text-align: center;
+		color:white;
+		font-weight: bold;
+	  border-radius: 15px;
+	  -moz-border-radius:15px;
+	  -webkit-border-radius:15px;
+	}
+
+	#imagenCentrada
+	{
+	  background-color: #82c3a6;
+		text-align: center;
+		margin-top: -10px;
+	}
+
+	#imagen{
+		margin-top: 15px;
 		width: 100%;
-		margin: 0 auto;
-	}
-	.imagen{
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%
 	}
 
+	header nav
+	{
+	  margin-top: 15px;
+		padding-left: 25px;
+	}
+
+	.contenedorFlex
+	{
+	  display: flex;
+	  flex-direction: column;
+	  background-color: #d5c75f;
+	  border: 1px;
+		font-weight: bold;
+		padding-bottom: 25px;
+	}
+
+	#retrato
+	{
+	  text-align: center;
+	  width: 100%;
+	}
+
+	#paisaje
+	{
+		text-align: center;
+		width: 100%;
+	}
+
+	.contenedorFooter
+	{
+	  display: flex;
+	  flex-direction: column;
+	  background-color: #C6d5c5;
+	  border-radius: 10px;
+	  -moz-border-radius:10px;
+	  -webkit-border-radius:10px;
+	}
+
+	#contacto
+	{
+	  width: 100%;
+	  font-size: 21px;
+	}
+
+	#termino
+	{
+	  width: 100%;
+	  font-size: 21px;
+	}
+
+	#redSocial
+	{
+	  width: 100%;
+	  font-size: 21px;
+	}
+
+	#derechos
+	{
+	  width: 100%;
+	  font-size: 21px;
+	}
+
+	div h1
+	{
+	  color: black;
+	  font-size: 25px;
+	}
 }
