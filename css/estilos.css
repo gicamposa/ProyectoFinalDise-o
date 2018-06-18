@@ -4,7 +4,6 @@
   padding: 0px;
 }
 
-
 @font-face {
   font-family: 'Dancing Script';
   src: url('Dancing Script.ttf');
@@ -14,8 +13,7 @@ body
 {
   background-color:  #02010a;
   font-family: 'Dancing Script';
-  font-size: 29px;
-  display: inline;
+  font-size: 25px;
 }
 
 div#centrado
@@ -34,14 +32,14 @@ div#centrado
 
 header
 {
-  margin: auto;
+  margin:auto;
   height: 100%;
   background-color: #5b7989;
 	text-align: center;
 	text-shadow: 2px 2px #02010a;
-	color:white;
 	font-weight: bold;
 	padding-bottom: 130px;
+	color: white;
 	padding-top: 40px;
   border-radius: 15px;
   -moz-border-radius:15px;
@@ -51,16 +49,23 @@ header
 header nav
 {
   float: right;
-  height: 100%;
-	display: block;
-	margin-right: 20px;
+	margin-right:   20px;
 	font-size: 21px;
 }
 
-header nav a
+header nav a:hover
 {
-  text-decoration: none;
-  color: white;
+	text-decoration: none;
+}
+
+header nav a:visited
+{
+	color: white;
+}
+
+header nav a:link
+{	
+	color: white;
 }
 
 #imagenCentrada
@@ -84,12 +89,12 @@ figure
 
 .contenedorFlex
 {
-  display: flex;
+	display:flex;
   flex-direction: row;
   background-color: #d5c75f;
   border: 1px;
 	font-weight: bold;
-
+	padding-bottom: 25px;
 }
 
 #paisaje
@@ -197,12 +202,21 @@ div h1
 	margin-left: 20px;
 }
 
+div[id^='redSocial'] img
+{
+  width: 10%;
+}
+
+div[id^='redSocial'] a:hover
+{
+  text-decoration: none;
+}
+
 #derechos
 {
   display: inline;
   width: 25%;
   font-size: 21px;
-  color: black;
 	margin-left: 20px;
 }
 
@@ -211,18 +225,17 @@ div h1
 
 	.contenido
 	{
-		margin-left: 10px;
-		margin-right: 10px;
-		margin-bottom: 10px;
+		margin: 6px;
 		max-width: 100%;
 	}
 
 	header
 	{
-		width: 100%
+		width: 100%;
 	  background-color: #5b7989;
 		text-align: center;
 		color:white;
+		font-size: 30px;
 		font-weight: bold;
 	  border-radius: 15px;
 	  -moz-border-radius:15px;
@@ -244,7 +257,8 @@ div h1
 	header nav
 	{
 	  margin-top: 15px;
-		padding-left: 25px;
+		margin-left:  20px;
+		padding-right: 20px;
 	}
 
 	.contenedorFlex
@@ -303,9 +317,13 @@ div h1
 	  font-size: 21px;
 	}
 
+	.contenedorFooter #id
+	{
+		font-size: 15px;
+	}
+
 	div h1
 	{
-	  color: black;
-	  font-size: 25px;
+  	color: black;
+  	font-size: 30px;
 	}
-}
