@@ -1,9 +1,17 @@
-*
+
+/* Hoja de estilos realizada por Giovanni Campos Alvarado */
+/*Proyecto Final de CSS                                   */
+
+/*                   C O M E N T A R I O S                */
+/*--------------------------------------------------------*/
+
+/* Se inicializan los margenes a  0 para quitar los que trae por defaul */
 {
 	margin:0px;
   padding: 0px;
 }
 
+/* Se hace el llamado al tipo de Dancing Script */
 @font-face {
   font-family: 'Dancing Script';
   src: url('Dancing Script.ttf');
@@ -257,7 +265,7 @@ div[id^='redSocial'] a:hover
 
 #imagen3 img{
   -webkit-filter:sepia(90%);
-  filter: sepia(90%);  
+  filter: sepia(90%);
 }
 
 #imagen4
@@ -442,4 +450,3 @@ div[id^='redSocial'] a:hover
 		text-align: center;
 		width: 100%;
 	}
-}
