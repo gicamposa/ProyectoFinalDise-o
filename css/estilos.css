@@ -64,7 +64,7 @@ header nav a:visited
 }
 
 header nav a:link
-{	
+{
 	color: white;
 }
 
@@ -220,6 +220,69 @@ div[id^='redSocial'] a:hover
 	margin-left: 20px;
 }
 
+.contenedorFlexImagen
+{
+	display:flex;
+  flex-direction: row;
+  background-color: #d5c75f;
+  border: 1px;
+	font-weight: bold;
+	padding-bottom: 10px;
+	margin-top: -9px;
+}
+
+#imagen1
+{
+  text-align: center;
+  width: 33.3%;
+}
+
+#imagen1 img
+{
+	-webkit-filter: blur(10px);
+	  filter: blur(10px);
+}
+
+#imagen2
+{
+  text-align: center;
+  width: 33.3%;
+}
+
+#imagen3
+{
+  text-align: center;
+  width: 33.3%;
+}
+
+#imagen3 img{
+  -webkit-filter:sepia(90%);
+  filter: sepia(90%);  
+}
+
+#imagen4
+{
+  text-align: center;
+  width: 33.3%;
+}
+
+#imagen5
+{
+  text-align: center;
+  width: 33.3%;
+}
+
+#imagen6
+{
+  text-align: center;
+  width: 33.3%;
+}
+
+#imagen2, #imagen4, #imagen6 img
+{
+	-webkit-filter: grayscale(100%);
+	 filter: grayscale(100%);
+}
 
 @media (max-width: 900px){
 
@@ -327,3 +390,56 @@ div[id^='redSocial'] a:hover
   	color: black;
   	font-size: 30px;
 	}
+
+	.contenedorFlexImagen
+	{
+		display: flex;
+		flex-direction: column;
+		background-color: #d5c75f;
+		border: 1px;
+		font-weight: bold;
+		padding-bottom: 25px;
+	}
+
+	#imagen1
+	{
+		text-align: center;
+		width: 100%;
+	}
+
+	#imagen1 img
+	{
+		text-align: center;
+		width: 100%;
+	}
+
+	#imagen2
+	{
+		text-align: center;
+		width: 100%;
+	}
+
+	#imagen3
+	{
+		text-align: center;
+		width: 100%;
+	}
+
+	#imagen4
+	{
+		text-align: center;
+		width: 100%;
+	}
+
+	#imagen5
+	{
+		text-align: center;
+		width: 100%;
+	}
+
+	#imagen6
+	{
+		text-align: center;
+		width: 100%;
+	}
+}
