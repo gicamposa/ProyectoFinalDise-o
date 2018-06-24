@@ -42,20 +42,34 @@ div#centrado
 
 header
 {
-  margin:auto;
-  height: auto;
-  background-color: #5b7989;
-	text-align: center;
-	text-shadow: 2px 2px #02010a;
-	font-weight: bold;
-	padding-bottom: 130px;
-	color: white;
-	padding-top: 40px;
-  border-radius: 15px;
-  -moz-border-radius:15px;
-  -webkit-border-radius:15px;
-	animation-duration: 1.5s;
-	animation-name: slidein;
+		margin: auto;
+	  height: auto;
+	  background-color: #5b7989;
+	  text-align: center;
+	  text-shadow: 2px 2px #02010a;
+	  font-weight: bold;
+	  padding-bottom: 130px;
+	  color: white;
+	  padding-top: 40px;
+	  -webkit-border-radius: 15px;
+	  -moz-border-radius: 15px;
+	  -ms-border-radius: 15px;
+	  -o-border-radius: 15px;
+	  border-radius: 15px;
+
+/* Animacion para los principales navegadores*/
+
+		-webkit-animation-duration: 1.5s;
+	  -moz-animation-duration: 1.5s;
+	  -ms-animation-duration: 1.5s;
+	  -o-animation-duration: 1.5s;
+	  animation-duration: 1.5s;
+	  -webkit-animation-name: slidein;
+	  -moz-animation-name: slidein;
+	  -ms-animation-name: slidein;
+	  -o-animation-name: slidein;
+	  animation-name: slidein;
+
 }
 
 header nav
@@ -67,7 +81,12 @@ header nav
 
 header nav a:hover
 {
-	text-decoration: none;
+  -webkit-text-decoration: none;
+  -moz-text-decoration: none;
+  -ms-text-decoration: none;
+  -o-text-decoration: none;
+  text-decoration: none;
+
 }
 
 header nav a:visited
@@ -79,8 +98,6 @@ header nav a:link
 {
 	color: white;
 }
-
-
 
 #imagenCentrada
 {
@@ -103,8 +120,19 @@ figure
 
 .contenedorFlex
 {
+
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
 	display:flex;
+
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -o-flex-direction: row;
   flex-direction: row;
+
   background-color: #d5c75f;
   border: 1px;
 	font-weight: bold;
@@ -120,14 +148,27 @@ figure
 
 #paisaje img:hover
 {
-    transition: background 1s;
-    animation: rotar 3s;
+	-webkit-transition: background 1s;
+	-moz-transition: background 1s;
+	-ms-transition: background 1s;
+	-o-transition: background 1s;
+	transition: background 1s;
+
+  -webkit-animation: rotar 3s;
+  -moz-animation: rotar 3s;
+  -ms-animation: rotar 3s;
+  -o-animation: rotar 3s;
+  animation: rotar 3s;
 }
 
 @-webkit-keyframes rotar
 {
   from
   {
+		-webkit-transform:rotate(10deg);
+		-moz-transform:rotate(10deg);
+		-ms-transform:rotate(10deg);
+		-o-transform:rotate(10deg);
     transform: rotate(10deg);
   }
   to
@@ -139,8 +180,11 @@ figure
 #paisaje img
 {
   border: 2px;
-  -webkit-filter: drop-shadow(15px 20px 25px #82c3a6);
-  filter: drop-shadow(15px 20px 25px #82c3a6);
+	-webkit-filter: drop-shadow(15px 20px 25px #82c3a6);
+	-moz-filter: drop-shadow(15px 20px 25px #82c3a6);
+  -ms-filter: drop-shadow(15px 20px 25px #82c3a6);
+  -o-filter: drop-shadow(15px 20px 25px #82c3a6);
+	filter: drop-shadow(15px 20px 25px #82c3a6);
 }
 
 #retrato
@@ -151,7 +195,16 @@ figure
 
 #retrato img:hover
 {
+  -webkit-transition: background 1s;
+  -moz-transition: background 1s;
+  -ms-transition: background 1s;
+  -o-transition: background 1s;
   transition: background 1s;
+
+	-webkit-animation: rotarRetrato 2s;
+  -moz-animation: rotarRetrato 2s;
+  -ms-animation: rotarRetrato 2s;
+  -o-animation: rotarRetrato 2s;
   animation: rotarRetrato 2s;
 }
 
@@ -159,7 +212,11 @@ figure
 {
   from
   {
-      transform: translate(20px,-5px);
+		-webkit-transform: translate(20px,-5px);
+		-moz-transform: translate(20px,-5px);
+		-ms-transform: translate(20px,-5px);
+		-o-transform: translate(20px,-5px);
+		 transform: translate(20px,-5px);
   }
   to
   {
@@ -170,18 +227,35 @@ figure
 #retrato img
 {
   border: 2px;
-  -webkit-filter: drop-shadow(15px 20px 25px #82c3a6);
-  filter: drop-shadow(15px 20px 25px #82c3a6);
+	-webkit-filter: drop-shadow(15px 20px 25px #82c3a6);
+	-moz-filter: drop-shadow(15px 20px 25px #82c3a6);
+	-ms-filter: drop-shadow(15px 20px 25px #82c3a6);
+	-o-filter: drop-shadow(15px 20px 25px #82c3a6);
+	filter: drop-shadow(15px 20px 25px #82c3a6);
 }
 
 .contenedorFooter
 {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
   display: flex;
+
+
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -o-flex-direction: row;
   flex-direction: row;
+
   background-color: #C6d5c5;
-  border-radius: 10px;
-  -moz-border-radius:10px;
-  -webkit-border-radius:10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+
 	margin-top: -6px;
 }
 
@@ -223,6 +297,10 @@ div[id^='redSocial'] img
 
 div[id^='redSocial'] a:hover
 {
+	-webkit-text-decoration: none;
+  -moz-text-decoration: none;
+  -ms-text-decoration: none;
+  -o-text-decoration: none;
   text-decoration: none;
 }
 
@@ -253,8 +331,8 @@ div[id^='redSocial'] a:hover
 
 #imagen1 img
 {
+	filter: blur(10px);
 	-webkit-filter: blur(10px);
-	 filter: blur(10px);
 }
 
 #imagen2
@@ -270,8 +348,8 @@ div[id^='redSocial'] a:hover
 }
 
 #imagen3 img{
-  -webkit-filter:sepia(90%);
-  filter: sepia(90%);
+	filter: sepia(90%);
+	-webkit-filter:sepia(90%);
 }
 
 #imagen4
@@ -294,8 +372,8 @@ div[id^='redSocial'] a:hover
 
 #imagen2, #imagen4, #imagen6 img
 {
+	filter: grayscale(100%);
 	-webkit-filter: grayscale(100%);
-	 filter: grayscale(100%);
 }
 
 /* Para la parte Movil */
@@ -466,6 +544,7 @@ div[id^='redSocial'] a:hover
 	0%
 	{
 			margin-top: 150%;
+
 	}
  60%
 	{
