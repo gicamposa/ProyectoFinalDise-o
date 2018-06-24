@@ -12,7 +12,8 @@
   padding: 0px;
 }
 
-/* Se hace el llamado al tipo de Dancing Script */
+/* Para la parte Desktop */
+
 @font-face {
   font-family: 'Dancing Script';
   src: url('Dancing Script.ttf');
@@ -28,7 +29,7 @@ body
 div#centrado
 {
 	float: left;
-  height: 100%;
+  height: auto;
  	display: inline;
 	margin-left: 20px;
 }
@@ -42,7 +43,7 @@ div#centrado
 header
 {
   margin:auto;
-  height: 100%;
+  height: auto;
   background-color: #5b7989;
 	text-align: center;
 	text-shadow: 2px 2px #02010a;
@@ -78,6 +79,8 @@ header nav a:link
 {
 	color: white;
 }
+
+
 
 #imagenCentrada
 {
@@ -182,6 +185,7 @@ figure
 	margin-top: -6px;
 }
 
+
 #contacto
 {
   display: inline;
@@ -250,7 +254,7 @@ div[id^='redSocial'] a:hover
 #imagen1 img
 {
 	-webkit-filter: blur(10px);
-	  filter: blur(10px);
+	 filter: blur(10px);
 }
 
 #imagen2
@@ -294,7 +298,8 @@ div[id^='redSocial'] a:hover
 	 filter: grayscale(100%);
 }
 
-@media (max-width: 900px){
+/* Para la parte Movil */
+@media only screen and (max-width: 900px){
 
 	.contenido
 	{
@@ -364,6 +369,7 @@ div[id^='redSocial'] a:hover
 	  border-radius: 10px;
 	  -moz-border-radius:10px;
 	  -webkit-border-radius:10px;
+	  -o-webkit-border-radius: 10px;
 	}
 
 	#contacto
@@ -454,6 +460,7 @@ div[id^='redSocial'] a:hover
 	}
 }
 
+/* Animacion slidein */
 @-webkit-keyframes slidein
 {
 	0%
