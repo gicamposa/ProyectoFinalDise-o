@@ -314,8 +314,18 @@ div[id^='redSocial'] a:hover
 
 .contenedorFlexImagen
 {
+	display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
 	display:flex;
+
+	-webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -o-flex-direction: row;
   flex-direction: row;
+
   background-color: #d5c75f;
   border: 1px;
 	font-weight: bold;
@@ -331,8 +341,11 @@ div[id^='redSocial'] a:hover
 
 #imagen1 img
 {
-	filter: blur(10px);
 	-webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -ms-filter: blur(10px);
+  -o-filter: blur(10px);
+	filter: blur(10px);
 }
 
 #imagen2
@@ -348,8 +361,11 @@ div[id^='redSocial'] a:hover
 }
 
 #imagen3 img{
+	-webkit-filter: sepia(90%);
+  -moz-filter: sepia(90%);
+  -ms-filter: sepia(90%);
+  -o-filter: sepia(90%);
 	filter: sepia(90%);
-	-webkit-filter:sepia(90%);
 }
 
 #imagen4
@@ -372,8 +388,11 @@ div[id^='redSocial'] a:hover
 
 #imagen2, #imagen4, #imagen6 img
 {
-	filter: grayscale(100%);
 	-webkit-filter: grayscale(100%);
+ -moz-filter: grayscale(100%);
+ -ms-filter: grayscale(100%);
+ -o-filter: grayscale(100%);
+	filter: grayscale(100%);
 }
 
 /* Para la parte Movil */
@@ -393,9 +412,11 @@ div[id^='redSocial'] a:hover
 		color:white;
 		font-size: 30px;
 		font-weight: bold;
+		-webkit-border-radius: 15px;
+ 		-moz-border-radius: 15px;
+ 		-ms-border-radius: 15px;
+ 		-o-border-radius: 15px;
 	  border-radius: 15px;
-	  -moz-border-radius:15px;
-	  -webkit-border-radius:15px;
 	}
 
 	#imagenCentrada
@@ -419,9 +440,19 @@ div[id^='redSocial'] a:hover
 
 	.contenedorFlex
 	{
+		display: -webkit-flex;
+  	display: -moz-flex;
+  	display: -ms-flex;
+  	display: -o-flex;
 	  display: flex;
+
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
 	  flex-direction: column;
-	  background-color: #d5c75f;
+
+		background-color: #d5c75f;
 	  border: 1px;
 		font-weight: bold;
 		padding-bottom: 25px;
@@ -441,13 +472,24 @@ div[id^='redSocial'] a:hover
 
 	.contenedorFooter
 	{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
 	  display: flex;
+
+		-webkit-flex-direction: column;
+  	-moz-flex-direction: column;
+  	-ms-flex-direction: column;
+  	-o-flex-direction: column;
 	  flex-direction: column;
+
 	  background-color: #C6d5c5;
+		-webkit-border-radius: 10px;
+  	-moz-border-radius: 10px;
+  	-ms-border-radius: 10px;
+  	-o-border-radius: 10px;
 	  border-radius: 10px;
-	  -moz-border-radius:10px;
-	  -webkit-border-radius:10px;
-	  -o-webkit-border-radius: 10px;
 	}
 
 	#contacto
@@ -487,8 +529,18 @@ div[id^='redSocial'] a:hover
 
 	.contenedorFlexImagen
 	{
+		display: -webkit-flex;
+ 		display: -moz-flex;
+ 		display: -ms-flex;
+ 		display: -o-flex;
 		display: flex;
+
+		-webkit-flex-direction: column;
+  	-moz-flex-direction: column;
+  	-ms-flex-direction: column;
+  	-o-flex-direction: column;
 		flex-direction: column;
+
 		background-color: #d5c75f;
 		border: 1px;
 		font-weight: bold;
